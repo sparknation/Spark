@@ -69,6 +69,32 @@
   font-size: 22px;
 }
 
+.btn-primary {
+  color: #B1B1B1;
+  background-color: #BCFBFF;
+  border-radius: 5px;
+  border: 0px;
+  width: 278.4px;
+  height: 178.11px;
+  font-size : 30px
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  color: #55463E;
+  background-color: #FFD4BC;
+  border-radius: 5px;
+}
+
+.btn-xl {
+  text-align: left;
+}
+
+.top-buffer {
+  margin-top: 20px;
+}
+
 .navbar-custom {
   background-color: #00396A;
 }

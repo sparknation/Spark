@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import '../css/App.css';
 import SparkNavBar from "./NavigationBar"
+import DisplaySparks from "./DisplaySparks"
 
-class App extends Component{
+class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -16,11 +17,25 @@ class App extends Component{
     this.setState({query_text: query});
   }
 
+  componentDidMount() {
+    fetch('./spark_data.json')
+      .then(response => response.json())
+      .then(result => {
+        const sparks = result.map(item => {
+          return item;
+        });
+        this.setState({
+          my_sparks: sparks
+        });
+      })
+  }
+
   render() {
+
     return (
       <main className="page bg-white" id="landingpage">
-        <SparkNavBar search_appointments= {this.search_appointments}/>
-        <p>List Sparks</p>
+        <SparkNavBar search_sparks={this.search_sparks}/>
+        <DisplaySparks sparks={this.state.my_sparks}/>
       </main>
     );
   }
