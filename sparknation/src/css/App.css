@@ -58,9 +58,9 @@
 .btn-outline-secondary:hover,
 .btn-outline-secondary:focus,
 .btn-outline-secondary:active {
-  color: #8DCAFF;
-  background-color: #00396A;
-  border: 3px solid #8DCAFF;
+  color: #DEF0FF;
+  background-color: #D88100;
+  border: 3px solid #D88100;
   border-radius: 10px;
 }
 
