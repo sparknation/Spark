@@ -1,3 +1,8 @@
+body {
+    /* Remove the scroll bounce. It's annoying */
+    overscroll-behavior: none;
+}
+
 .App {
   text-align: center;
 }
@@ -21,6 +26,30 @@
 
 .App-link {
   color: #61dafb;
+}
+
+/* Create a fixed header, just cuz its cooler */
+.navbar-cont {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  box-shadow: 0 5px 20px -10px black;
+}
+
+/* Remove horizontal scrolling space */
+.row {
+  width: 100%;
+  height: auto;
+}
+
+/* Spark gallery css. Need to have the top be offset, so we can see it */
+.spark-gallery {
+  height: 100%;
+  height: auto;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
 }
 
 @keyframes App-logo-spin {
@@ -92,7 +121,8 @@
 }
 
 .top-buffer {
-  margin-top: 20px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .navbar-custom {
