@@ -15,7 +15,8 @@
     "react-icons": "^3.7.0",
     "react-moment": "^0.9.2",
     "react-scripts": "3.0.1",
-    "reactjs-popup": "^1.4.2"
+    "reactjs-popup": "^1.4.2",
+    "reactstrap": "^8.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

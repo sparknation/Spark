@@ -52,6 +52,51 @@ body {
   padding-bottom: 10vh;
 }
 
+/* Close button for sign in popup */
+.close {
+  cursor: pointer;
+}
+
+/* Login popup css */
+.signin-cont{
+  padding: 5vh;
+}
+
+/* Text css */
+.subheader {
+  font-weight: 200;
+  font-size: 60px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: rgb(87, 82, 136);
+}
+
+.description {
+  color: rgb(102, 107, 184);
+  font-weight: 100;
+  font-size: 25px;
+}
+
+Label {
+  color: rgb(60, 61, 75);
+  font-weight: 200;
+  font-size: 18px;
+}
+
+/* Submit button css */
+#submit-button {
+  background-color: rgb(240, 240, 255);
+  transition: all 250ms ease-in;
+}
+
+#submit-button:hover {
+  background-color: #feffac;
+}
+
+#submit-button:active {
+  background-color: #ffcf66;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

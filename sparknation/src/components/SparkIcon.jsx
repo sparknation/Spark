@@ -10,8 +10,7 @@ class SparkIcon extends Component {
 					<div>{this.props.spark.creator}</div>
 				</button>
 			</div>
-
-		)
+		);
 	}
 }
 

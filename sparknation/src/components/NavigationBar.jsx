@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 import logo from "./assets/sparkflame.png";
+
+// Imported by JJ
+import Popup from "reactjs-popup";
+import SignIn from "./SignIn";
+
 class SparkNavBar extends Component {
   render() {
     return (
@@ -54,12 +59,31 @@ class SparkNavBar extends Component {
             </ul>
             <ul className="navbar-nav ml-auto">
               <li className="navbar-item px-5">
-                <button
-                  className="btn btn-outline-secondary btn-lg navbar-link"
-                  type="button"
+                <Popup
+                className="sign-in-popup"
+                  trigger={
+                    <button
+                      className="btn btn-outline-secondary btn-lg navbar-link"
+                      type="button"
+                    >
+                      Sign In
+                    </button>
+                  }
+                  modal
+                  lockScroll
+                  closeOnDocumentClick
+                  closeOnEscape
+                  repositionOnResize
                 >
-                  Sign In
-                </button>
+                  {close => (
+                    <div>
+                      <a className="close" onClick={close}>
+                        &times;
+                      </a>
+                      <SignIn />
+                    </div>
+                  )}
+                </Popup>
               </li>
             </ul>
           </div>
