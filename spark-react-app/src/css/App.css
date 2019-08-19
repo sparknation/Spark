@@ -162,7 +162,7 @@ Label {
 .btn-primary:focus,
 .btn-primary:active {
   color: #55463E;
-  background-color: #FFD4BC;
+  background-color: rgb(253, 231, 159);
   border-radius: 5px;
 }
 
