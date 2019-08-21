@@ -1,0 +1,22 @@
+{
+  "name": "sparktest",
+  "version": "1.0.0",
+  "description": "Testing new structure for linking express with client frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix spark-react-app",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Jonathan Cheng",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1"
+  }
+}
